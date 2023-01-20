@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Generate Test Post"
+date:   2023-01-21 02:24:43 +0900
+categories: test
+---
+
+시험용 포스팅 생성
