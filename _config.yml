@@ -33,6 +33,14 @@ plugins:
   - jekyll-feed
   - jekyll-admin
 
+whitelist:
+  - jekyll-admin
+  
+jekyll_admin:
+  - staticfiles
+  - datafiles
+  - configuration
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
