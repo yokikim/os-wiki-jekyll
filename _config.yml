@@ -31,22 +31,14 @@ github_username:  yokikim
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-admin
   - jekyll-relative-links
   - jekyll-paginate
 
 whitelist:
-  - jekyll-admin
   - jekyll-relative-links
   - jekyll-paginate
   
-jekyll_admin:
-  - posts
-  - pages
-  - staticfiles
-  - datafiles
-  - configuration
-  - wiki
+
 
 
 
