@@ -20,7 +20,7 @@
 
 title: Yoki Kim's Testpage
 email: 
-description: >- 
+description: 
     This is test page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -32,9 +32,13 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-admin
+  - jekyll-relative-links
+  - jekyll-paginate
 
 whitelist:
   - jekyll-admin
+  - jekyll-relative-links
+  - jekyll-paginate
   
 jekyll_admin:
   - posts
@@ -42,6 +46,8 @@ jekyll_admin:
   - staticfiles
   - datafiles
   - configuration
+  - wiki
+
 
 
 # Exclude from processing.
