@@ -1,7 +1,0 @@
----
-title: Newpost with
-layout: post
-date: '2023-01-21 03:00:00'
----
-
-write with jekyll-admin
