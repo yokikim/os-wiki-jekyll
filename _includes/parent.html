@@ -1,0 +1,10 @@
+<p>
+
+{% assign p_page = page.parent | split: "," %}
+----------------------------<br>
+Parent Links<br>
+<a href="../wiki/">Front</a><br>
+{% for x in p_page %}
+	<a href="{{ x }}.html">{{ x }}</a><br>
+{% endfor %}
+</p>
