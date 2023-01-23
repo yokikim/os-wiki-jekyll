@@ -1,12 +1,11 @@
 ---
 
-layout: default
+layout: page
 permalink: /wiki/
 title: Front
 
 ---
 
-Welcome to the osdinostudy_1 wiki!
 
 [10판 단어 인덱싱](10판-단어-인덱싱.html)
 

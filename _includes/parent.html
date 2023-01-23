@@ -1,0 +1,10 @@
+<p>
+Block file
+{%- assign p_page = page.parent | split: "," -%}
+
+{%- assign loop = "0123456789" | split: "" -%}
+{%- for item in loop -%}
+	{{ p_page[item] }}
+	<!-- <a href="{{ p_page[item].url}}">{{ p_page[item].title }}<\a>{%- unless forloop.last -%} - {%- endunless -%} -->
+{%- endfor -%}
+</p>

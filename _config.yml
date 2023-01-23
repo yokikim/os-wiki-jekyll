@@ -26,12 +26,17 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  yokikim
-
+footnote_backlink: "up"
+footnote_backlink_inline: yes
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-coffeescript
+#  - backlink
+# whitelist:
+#  - backlink
 
 # Exclude from processing.
 # The following items will not be processed, by default.
