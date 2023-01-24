@@ -32,6 +32,7 @@ footnote_backlink_inline: yes
 # Build settings
 theme: minima
 plugins:
+  - jekyll-admin
   - jekyll-feed
 #  - jekyll-redirect-from
   - jekyll-coffeescript
@@ -39,11 +40,15 @@ plugins:
 #  - jekyll-optional-front-matter
     
 whitelist:
+  - jekyll-admin
 #  - jekyll-redirect-from
   - jekyll-coffeescript
 #  - jekyll-titles-from-headings
 #  - jekyll-optional-front-matter
 
+jekyll_admin:
+  homepage: ""
+  hidden_links:
 
 # Exclude from processing.
 # The following items will not be processed, by default.
