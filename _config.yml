@@ -38,17 +38,25 @@ plugins:
   - jekyll-coffeescript
 #  - jekyll-titles-from-headings
 #  - jekyll-optional-front-matter
-    
+  - jekyll-remote-theme
+  - jekyll-wikilinks
+  
 whitelist:
   - jekyll-admin
 #  - jekyll-redirect-from
   - jekyll-coffeescript
 #  - jekyll-titles-from-headings
 #  - jekyll-optional-front-matter
-
+  - jekyll-remote-theme
+  - jekyll-wikilinks
+  
 jekyll_admin:
   homepage: ""
   hidden_links:
+
+
+
+# remote_theme: raghudotcc/simply-jekyll
 
 # Exclude from processing.
 # The following items will not be processed, by default.

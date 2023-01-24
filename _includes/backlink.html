@@ -1,0 +1,8 @@
+<p>
+------------------------------
+{% assign post_backlinks = page.backlinks | doc_type: "pages" %}
+{% for backlink in post_backlinks %}
+  {% assign post = site.posts | where: "url", backlink | first %}
+  {{ post.title }}
+{% endfor %}
+</p>
