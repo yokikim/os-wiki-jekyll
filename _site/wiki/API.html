@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>가상메모리_요약 | Test Site</title>
+<title>API | Test Site</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="가상메모리_요약" />
+<meta property="og:title" content="API" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Test Site" />
 <meta property="og:description" content="Test Site" />
-<link rel="canonical" href="http://localhost:4000/wiki/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%9A%94%EC%95%BD.html" />
-<meta property="og:url" content="http://localhost:4000/wiki/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%9A%94%EC%95%BD.html" />
+<link rel="canonical" href="http://localhost:4000/wiki/API.html" />
+<meta property="og:url" content="http://localhost:4000/wiki/API.html" />
 <meta property="og:site_name" content="Test Site" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="가상메모리_요약" />
+<meta property="twitter:title" content="API" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Test Site","headline":"가상메모리_요약","url":"http://localhost:4000/wiki/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%9A%94%EC%95%BD.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Test Site","headline":"API","url":"http://localhost:4000/wiki/API.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Test Site" /></head>
 <body><header class="site-header" role="banner">
@@ -41,25 +41,47 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">가상메모리_요약</h1>
+    <h1 class="post-title">API</h1>
   </header>
 
   <div class="post-content">
-    <ul>
-  <li>가상 메모리는 물리 메모리를 매우 큰 균일한 저장장소 배열로 추상화한다.</li>
-  <li>가상 메모리의 이점은 다음과 같다. (1) 프로그램이 물리 메모리보다 클 수 있음, (2) 프로그램 전체가 메모리에 있을 필요는 없음, (3) 프로세스가 메모리를 공유할 수 있음 및 (4) 프로세스를 보다 효율적으로 생성할 수 있다.</li>
-  <li>요구 페이징은 프로그램 실행 중 페이지가 필요할 때만 페이지를 적재하는 기법이다. 따라서 절대로 요구되지 않은 페이지는 메모리에 적재되지 않는다.</li>
-  <li>현재 메모리에 없는 페이지에 액세스하면 페이지 폴트가 발생한다. 페이지는 백업저장장치에서 메모리의 가용 페이지 프레임으로 가져와야 한다.</li>
-  <li>쓰기 시 복사를 통해 자식 프로세스는 부모 프로세스와 동일한 주소 공간을 공유할 수 있다. 자식 프로세스나 부모 프로세스가 페이지를 수정하면 페이지의 복사본이 만들어진다.</li>
-  <li>시용 가능한 메모리가 부족하면 페이지 교체 알고리즘이 메모리에 존재하는 기존페이지를 선택하여 새 페이지로 바꾼다. 페이지 교체 알고리즘에는 FIFO, 최적 및 LRU가 포함된다. 순수한 LRU 알고리즘은 구현하기에 비실용적이며 대부분의 시스템은 대신 LRU 근사 알고리즘을 사용한다.</li>
-  <li>전역 페이지 교체 알고리즘은 시스템의 모든 프로세스에서 교체할 페이지를 선택하고 지역 페이지 교체 알고리즘은 폴트를 발생시킨 프로세스에서 페이지를 선택한다.</li>
-  <li>스래싱은 시스템이 실행보다 페이징하는 데 더 많은 시간을 소비할 때 발생한다.</li>
-  <li>지역성은 함께 사용되는 일련의 페이지를 나타낸다. 프로세스가 실행되면 하나의 지역성에서 다른 지역성으로 이동한다. 작업 집합은 지역성에 기반을 두며 프로세스에서 현재 사용 중인 페이지 집합으로 정의된다.</li>
-  <li>메모리 압축은 여러 페이지를 하나의 페이지로 압축하는 메모리 관리 기법이다. 압축메모리는 페이징의 대안이며 페이징을 지원하지 않는 모바일 시스템에서 사용된다.</li>
-  <li>커널 메모리는 사용자 모드 프로세스와 다르게 할당된다. 다양한 크기의 연속된 청크로 할당된다. 커널 메모리에 대한 두 가지 일반적인 기법은 (1) 버디 시스템과 (2) 슬랩 할당이다.</li>
-  <li>TLB reach는 TLB에서 액세스 할 수 있는 메모리 양을 나타내며 TLB의 항목 수에 페이지 크기를 곱한 값과 같다. TLB reach를 늘리는 한 가지 기술은 페이지 크기를 늘리는 것이다.</li>
-  <li>Linux, Windows 및 Solaris는 다른 기능 중에서도 요구 페이징 및 COW (copy-on-write)를 사용하여 가상 메모리를 유사하게 관리한다. 또한 각 시스템은 클록 알고리즘으로 알려진 LRU 근사 변형을 사용한다.</li>
-</ul>
+    <p>70p</p>
+
+<p>응용 프로그래밍 인터페이스 Application Programming Interface</p>
+
+<p>간단한 프로그램이라도 운영체제의 기능을 아주 많이 사용하게 된다.</p>
+
+<p>종종 초당 수천 개의 <a href="시스템-콜.html">시스템 콜</a>을 수행하게 된다.</p>
+
+<p>사용자 대부분은, 이러한 정도의 상세를 결코 알지 못한다.</p>
+
+<p>대부분의 응용 개발자들은 응용 프로그래밍 인터페이스에 따라 프로그램을 설계한다.</p>
+
+<p>API는 각 함수에 전달되어야 할 매개변수들과 프로그래머가 기대할 수 있는 반환 값을 포함하여 응용 프로그래머가 사용 가능한 함수의 집합을 명시한다.</p>
+
+<p>프로그래머는 운영체제가 제공하는 코드의 라이브러리를 통하여 API를 활용한다.</p>
+
+<p>UNIX 와 Linux 시스템에서 C 언어로 작성된 프로그램을 위해서 제공되는 라이브러리는 libc로 불린다.</p>
+
+<p>막후에서 API를 구성하는 함수들은 통상 응용 프로그래머를 대신하여 실제 시스템 콜을 호출한다.</p>
+
+<p>왜 응용 프로그래머는 실제 시스템 콜을 부르는 것보다 API에 따라 프로그래밍 하는 것을 선호하는가? 그렇게 하는 데에는 몇 가지 이유가 있다.</p>
+
+<p>한 가지 이점은 프로그램의 호환성과 관련 있다.</p>
+
+<p>API에 따라 프로그램을 설계하는 응용 프로그래머는 자신의 프로그램이 같은 API를 지원하는 어느 시스템에서건 컴파일되고 실행된다는 것을 기대할 수 있다.</p>
+
+<p>(현실적으로는 컴퓨터 구조의 차이 때문에 보이는 것보다 쉽지는 않다.)</p>
+
+<p>게다가 실제 시스템 콜은 종종 좀 더 자세한 명세가 필요하고 프로그램상에서 작업하기가 응용 프로그래머에게 가용한 API보다 더 어렵다.</p>
+
+<p>그럼에도 불구하고 API 함수를 호출하는 것과 커널의 관련된 시스템 콜을 호출하는 것에는 강한 상관관계가 존재한다.</p>
+
+<hr />
+
+<p><a href="실행시간-환경.html">실행시간 환경</a> (RTE)</p>
+
+<p><a href="시스템-콜-인터페이스.html">시스템 콜 인터페이스</a></p>
 <p>
 
 

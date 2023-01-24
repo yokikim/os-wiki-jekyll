@@ -1,12 +1,13 @@
-70p
-
-응용 프로그래밍 인터페이스 Application Programming Interface
 ---
 
 layout: page
 title: API
 
 ---
+
+70p
+
+응용 프로그래밍 인터페이스 Application Programming Interface
 
 
 간단한 프로그램이라도 운영체제의 기능을 아주 많이 사용하게 된다.
