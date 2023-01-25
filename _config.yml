@@ -40,6 +40,7 @@ plugins:
 #  - jekyll-optional-front-matter
   - jekyll-remote-theme
   - jekyll-wikilinks
+  - jekyll-include-cache
   
 whitelist:
   - jekyll-admin
@@ -49,6 +50,7 @@ whitelist:
 #  - jekyll-optional-front-matter
   - jekyll-remote-theme
   - jekyll-wikilinks
+  - jekyll-include-cache
   
 jekyll_admin:
   homepage: ""

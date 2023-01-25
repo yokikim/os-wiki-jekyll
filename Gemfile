@@ -26,6 +26,8 @@ group :jekyll_plugins do
   gem "jekyll-sass-converter"
   gem "jekyll-wikilinks"
   gem "jekyll-sitemap"
+  gem "jekyll-include-cache"
+  gem "faraday-retry"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
