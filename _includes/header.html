@@ -23,6 +23,7 @@
 <!--            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>	-->
             {%- endif -%}
           {%- endfor -%}
+              <a class="page-link" href="{{ "sitemaps".url | relative_url }}">{{ "sitemaps".title | escape }}</a>	
               <a class="page-link" href="{{ "wiki".url | relative_url }}">{{ "Front".title | escape }}</a>	
               <a class="page-link" href="{{ "about".url | relative_url }}">{{ "About".title | escape }}</a>	
         </div>

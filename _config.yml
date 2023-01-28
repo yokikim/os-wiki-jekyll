@@ -76,6 +76,9 @@ wikilinks:
   enabled: true
   exclude: []
  
+feed:
+    post_limit: 0
+    excerpt_only: true
 # remote_theme: raghudotcc/simply-jekyll
 
 # Exclude from processing.
