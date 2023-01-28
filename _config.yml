@@ -33,7 +33,7 @@ footnote_backlink_inline: yes
 theme: minima
 plugins:
   - jekyll-admin
-  - jekyll-feed
+#  - jekyll-feed
 #  - jekyll-redirect-from
   - jekyll-coffeescript
 #  - jekyll-titles-from-headings
